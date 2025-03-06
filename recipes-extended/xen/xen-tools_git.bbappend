@@ -1,3 +1,5 @@
-XEN_REL = "4.19"
+#XEN_REL = "4.19"
 
-FILES:${PN}-misc:append = " ${libdir}/xen/bin/xen-9pfsd"
+#FILES:${PN}-misc:append = " ${libdir}/xen/bin/xen-9pfsd"
+
+#INSANE_SKIP:${PN} = "already-stripped patch-fuzz"

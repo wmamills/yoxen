@@ -42,6 +42,7 @@ local_conf_header:
     SOURCE_MIRROR_URL = "http://localhost:8000/downloads"
     BB_NUMBER_THREADS = "3"
     PARALLEL_MAKE = "-j 5"
+    USER_CLASSES ?= "buildstats"
   xen: |
     #DISTRO_FEATURES:append = " virtualization xen"
     DISTRO_FEATURES:append = " virtualization"

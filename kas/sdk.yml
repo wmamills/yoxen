@@ -6,5 +6,6 @@ build_system: oe
 local_conf_header:
   sdk-extra-packages: |
     IMAGE_INSTALL:append = " qemu "
+    RDEPENDS_nativesdk-packagegroup-sdk-host:append = " python3-setuptools"
 
 task: populate_sdk
